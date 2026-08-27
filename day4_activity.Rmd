@@ -1,7 +1,6 @@
 ---
 title: "Day 4: In-Class Activity - Student Data Wrangling"
 author: "Your Name"
-date: "`r Sys.Date()`"
 output: github_document
 ---
 
