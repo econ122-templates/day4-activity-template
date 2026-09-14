@@ -8,12 +8,9 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 ```
 
-```{r packages, include=FALSE, eval=TRUE}
-mypacks <- c("ggplot2","dplyr","readr","tidyr","ISLR2","class","gridExtra")
-packs <- installed.packages()
-install.me <- mypacks[!(mypacks %in% packs[,"Package"])]
-if (length(install.me) >= 1) install.packages(install.me, repos = "http://cran.us.r-project.org")
-lapply(mypacks, library, character.only=TRUE)
+```{r packages, echo=TRUE}
+# Load any packages you need for this activity here
+
 ```
 
 ## Welcome to Your In-Class Activity!
