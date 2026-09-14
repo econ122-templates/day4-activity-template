@@ -35,7 +35,7 @@ students_raw <- tibble(
   name = c("Alice", "Bob", "Charlie", "David", "Eve", "Frank"),
   Pomona = c("Yes", "No", "Yes", "No", "No", "No"),
   Scripps = c("No", "Yes", "No", "No", "Yes", "No"),
-  CMC = c("No", "No", "No", "Yes", "No", "No")
+  `Claremont McKenna` = c("No", "No", "No", "Yes", "No", "No")
 )
 
 # Information about the colleges
@@ -74,6 +74,10 @@ The `students_raw` data is in a **wide** format, where each college is its own c
 ```
 
 **Hint:** Remember to specify which columns to pivot, what to name the new "names" column, and what to name the new "values" column. You might also want to filter out the "No" entries after pivoting to only show the colleges a student *is* enrolled in.
+
+**Note on column names:** some of these column names contain a space, which is
+not a valid R name on its own. Wrap any such name in backticks wherever you
+refer to it — a column called `New York` would be written `` `New York` ``.
 
 ## Part 3: Mutating Joins (15 minutes)
 
